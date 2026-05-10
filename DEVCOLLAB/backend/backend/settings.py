@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'users',
     'projects',
+    'channels',
+    'chat',
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -140,3 +142,5 @@ REST_FRAMEWORK = {
 
 # CORS SETTINGS (ADD HERE)
 CORS_ALLOW_ALL_ORIGINS = True
+
+ASGI_APPLICATION = 'backend.asgi.application'
